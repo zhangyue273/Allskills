@@ -3,292 +3,531 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - [Your App Name]</title>
+    <title>Legal - Gold Bull Slots</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.8;
             color: #333;
-            background: #f5f7fa;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
             padding: 20px;
+            min-height: 100vh;
         }
-        
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
         }
-        
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #1a73e8;
+        }
+
         h1 {
             color: #1a73e8;
-            font-size: 28px;
+            font-size: 36px;
+            font-weight: 700;
             margin-bottom: 10px;
-            border-bottom: 3px solid #1a73e8;
-            padding-bottom: 15px;
+            letter-spacing: -0.5px;
         }
-        
-        .update-date {
+
+        .app-name {
             color: #666;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .update-date {
+            color: #888;
             font-size: 14px;
-            margin-bottom: 30px;
+            margin-top: 15px;
             font-style: italic;
         }
-        
+
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            padding: 12px 30px;
+            background: #f0f0f0;
+            border-radius: 30px;
+            cursor: pointer;
+            color: #666;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            font-size: 15px;
+        }
+
+        .nav-tab:hover, .nav-tab.active {
+            background: #1a73e8;
+            color: white;
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .intro-box {
+            background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
+            border-left: 5px solid #1a73e8;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 15px;
+            color: #444;
+            line-height: 1.7;
+        }
+
         h2 {
             color: #202124;
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-left: 15px;
+            font-size: 22px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 20px;
             border-left: 4px solid #1a73e8;
+            font-weight: 600;
         }
-        
+
         h3 {
             color: #444;
-            font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 10px;
+            font-size: 17px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
         }
-        
+
         p {
             margin-bottom: 15px;
             text-align: justify;
+            color: #444;
+            font-size: 15px;
         }
-        
+
         ul, ol {
-            margin-left: 25px;
-            margin-bottom: 15px;
+            margin-left: 30px;
+            margin-bottom: 20px;
         }
-        
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #444;
+            font-size: 15px;
+            line-height: 1.7;
         }
-        
-        .highlight-box {
-            background: #e8f0fe;
-            border-left: 4px solid #1a73e8;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        font-weight: 500;
-        color: #1a73e8;
-        font-size: 15px;
-        line-height: 1.6;
-        display: block;
-        margin-bottom: 15px;
-        text-decoration: none;
-        border: 1px solid #1a73e8;
-        border-left: 4px solid #1a73e8;
-        padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        
-        .contact-info {
+
+        .contact-highlight {
             background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
         }
-        
-        .contact-info p {
+
+        .contact-highlight p {
             margin-bottom: 8px;
+            font-size: 15px;
         }
-        
-        .data-type {
-            display: inline-block;
-            background: #e8f0fe;
-            padding: 3px 10px;
-            border-radius: 15px;
-            font-size: 14px;
-            margin: 3px;
-            color: #1a73e8;
-            font-weight: 500;
-        }
-        
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-        }
-        
-        a {
+
+        .email-link {
             color: #1a73e8;
             text-decoration: none;
-        font-weight: 500;
-        transition: color 0.2s;
-        border-bottom: 1px solid transparent;
-        padding-bottom: 2px;
-        margin-left: 2px;
-        margin-right: 2px;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
         }
-        
-        a:hover {
-            color: #1557b0;
-            border-bottom: 1px solid #1557b0;
+
+        .email-link:hover {
+            border-bottom: 2px solid #1a73e8;
         }
-        
-        table {
+
+        .data-category {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1a73e8;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 5px;
+        }
+
+        .third-party-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 15px 0;
+            margin: 25px 0;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        
-        th, td {
-            padding: 12px;
+
+        .third-party-table th {
+            background: #1a73e8;
+            color: white;
+            padding: 15px;
             text-align: left;
-            border: 1px solid #ddd;
-        }
-        
-        th {
-            background: #f8f9fa;
             font-weight: 600;
-            color: #202124;
         }
+
+        .third-party-table td {
+            padding: 14px 15px;
+            border-bottom: 1px solid #eee;
+            background: white;
         }
-        
-        tr:nth-child(even) {
-            background: #fafafa;
+
+        .third-party-table tr:nth-child(even) td {
+            background: #f8f9fa;
+        }
+
+        .third-party-table tr:hover td {
+            background: #e8f0fe;
+        }
+
+        .third-party-table a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .third-party-table a:hover {
+            color: #1557b0;
+            text-decoration: underline;
+        }
+
+        .children-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff9800;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .children-box h3 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        .rights-list {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .rights-list li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .rights-list strong {
+            color: #1a73e8;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-left: 5px solid #f44336;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .warning-box h3 {
+            color: #c62828;
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        .company-name {
+            color: #1a73e8;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            .nav-tab {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .third-party-table {
+                font-size: 12px;
+            }
+            .third-party-table th,
+            .third-party-table td {
+                padding: 10px;
+            }
         }
     </style>
+<base target="_blank">
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="update-date">Last Updated: April 15, 2026</p>
-        
-        <div class="highlight-box">
-            <strong>Important Notice:</strong> This Privacy Policy applies to [Your App Name] (hereinafter referred to as "the App"). Please read this policy carefully to understand how we collect, use, and protect your personal information.
+        <div class="header">
+            <h1>Legal Documents</h1>
+            <div class="app-name">Gold Bull Slots by Allskills</div>
+            <div class="update-date">Last Updated: April 15, 2026</div>
         </div>
-        
-        <h2>1. Developer Information</h2>
-        <div class="contact-info">
-            <p><strong>Developer Name:</strong> [Your Developer/Company Name]</p>
-            <p><strong>Contact Email:</strong> [your-email@example.com]</p>
-            <p><strong>Physical Address:</strong> [Your Physical Address, Optional]</p>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('privacy')">Privacy Policy</button>
+            <button class="nav-tab" onclick="showSection('terms')">Terms of Use</button>
         </div>
-        
-        <h2>2. Information We Collect</h2>
-        <p>In compliance with Google Play's Data Safety requirements[^1^][^2^], we collect the following types of information:</p>
-        
-        <h3>2.1 Automatically Collected Information</h3>
-        <ul>
-            <li><span class="data-type">Device Information</span> Device model, OS version, device identifiers (such as Android ID)</li>
-            <li><span class="data-type">App Performance Data</span> Crash logs, performance metrics, usage statistics</li>
-            <li><span class="data-type">IP Address</span> Used for analytics and service optimization</li>
-        </ul>
-        
-        <h3>2.2 Information You Provide (if applicable)</h3>
-        <ul>
-            <li><span class="data-type">Account Information</span> Username, email address (if account system is supported)</li>
-            <li><span class="data-type">User Content</span> Game progress, settings preferences</li>
-        </ul>
-        
-        <h3>2.3 Sensitive Permissions (if requested)</h3>
-        <p>If the App requires access to sensitive data, we will explicitly disclose the purpose[^2^]:</p>
-        <ul>
-            <li><strong>Storage Permission:</strong> To save game data locally</li>
-            <li><strong>Network Permission:</strong> For advertising and analytics</li>
-            <!-- Add/remove based on actual permissions requested -->
-        </ul>
-        
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information for the following purposes[^1^]:</p>
-        <ol>
-            <li><strong>App Functionality:</strong> To provide core game/app services</li>
-            <li><strong>Advertising:</strong> To display personalized or non-personalized advertisements (via third-party ad networks such as AdMob)</li>
-            <li><strong>Analytics & Improvement:</strong> To analyze user behavior using tools like Firebase Analytics and optimize product experience</li>
-            <li><strong>Technical Support:</strong> To monitor app performance and resolve technical issues</li>
-            <li><strong>Security Protection:</strong> To prevent fraud and abuse</li>
-        </ol>
-        
-        <h2>4. Data Sharing & Third-Party Services</h2>
-        <p>We may share data with the following third-party service providers[^1^]:</p>
-        
-        <table>
-            <tr style="background: #f8f9fa;">
-                <th>Third-Party Service</th>
-                <th>Purpose</th>
-                <th>Privacy Policy</th>
-            </tr>
-            <tr>
-                <td>Google AdMob</td>
-                <td>Advertising display</td>
-                <td><a href="https://policies.google.com/privacy" target="_blank">View</a></td>
-            </tr>
-            <tr style="background: #fafafa;">
-                <td>Firebase Analytics</td>
-                <td>Usage analytics</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank">View</a></td>
-            </tr>
-            <!-- Add more rows based on actual SDKs used -->
-        </table>
-        
-        <h2>5. Data Security</h2>
-        <p>We implement the following security measures to protect your data[^1^]:</p>
-        <ul>
-            <li>Use encryption technologies (HTTPS/TLS) for transmitting sensitive data</li>
-            <li>Restrict internal employee access to user data</li>
-            <li>Regularly review and update security practices</li>
-        </ul>
-        
-        <h2>6. Data Retention & Deletion</h2>
-        <p>In accordance with Google Play Store requirements[^2^]:</p>
-        <ul>
-            <li><strong>Retention Period:</strong> We retain your data only as long as necessary, typically for the duration of your account existence or as required to provide our services</li>
-            <li><strong>Account Deletion:</strong> If the App supports account system, you may delete your account and associated data through in-app settings or by contacting us</li>
-            <li><strong>Automatic Deletion:</strong> Upon app uninstallation, locally stored data will be deleted; server-side data will be purged within a reasonable timeframe</li>
-        </ul>
-        
-        <h2>7. Children's Privacy</h2>
-        <div class="highlight-box">
-            <p>This App is <span id="child-policy">[not directed/directed]</span> at children under 13 years of age. If directed at children, we comply with COPPA and other children's privacy protection regulations[^1^], obtaining verifiable parental consent before collecting children's information.</p>
+
+        <!-- PRIVACY POLICY SECTION -->
+        <div id="privacy" class="content-section active">
+            <div class="intro-box">
+                <strong>Allskills</strong> ("we", "us" or "our") sincerely hopes you to read this Privacy Policy carefully. This Privacy Policy is intended to explain how we collect, use, share, or otherwise process information that we collect through <strong>Gold Bull Slots</strong> ("App"). By accessing or using all or any portion of the App, you accept all the terms and conditions of this Policy.
+            </div>
+
+            <h2>How to Contact Us?</h2>
+            <div class="contact-highlight">
+                <p>If you have any questions about how we handle your personal information, please contact us:</p>
+                <p>📧 Email: <a href="mailto:zy504408187@gmail.com" class="email-link">zy504408187@gmail.com</a></p>
+            </div>
+
+            <h2>What Information Do We Collect?</h2>
+            <p>When you use the App, we may collect and store the following information that does not identify you personally:</p>
+            <ul>
+                <li><span class="data-category">Device Info</span> The type, model, version, brand, language and resolution of device</li>
+                <li><span class="data-category">Network</span> The type and operator of network</li>
+                <li><span class="data-category">OS</span> The type, version name and version number of operating system</li>
+                <li><span class="data-category">Device ID</span> Device identifiers (for example: MAC Address, etc.)</li>
+                <li><span class="data-category">Ad ID</span> Advertising identifiers (for example: GAID, IDGA, IDFV, etc.)</li>
+                <li><span class="data-category">Usage Time</span> The time and duration of your use of the App</li>
+                <li><span class="data-category">Behavior</span> Behavioral usage of the App (for example: Page views, Click-through statistics, etc.)</li>
+            </ul>
+
+            <h2>How Do We Use Your Information?</h2>
+            <p>We use the information collected through the App (individually or in combination) for the purposes described in this Policy or disclosed in the App. Specifically, we use the following to:</p>
+            <ol>
+                <li>License you to use the App and provide you with the App's features</li>
+                <li>Operate, develop, and improve the App</li>
+                <li>Provide you with personalized advertising</li>
+                <li>Respond to your questions and provide customer service</li>
+                <li>Identify, fix, and troubleshoot bugs and functional errors</li>
+                <li>Optimize or improve the App</li>
+                <li>Protect the integrity of the App and enforce our Terms of Use and other applicable terms, including detecting and preventing fraud and unauthorized activity, protecting our systems and services, preventing hacking and cheating, and generally ensuring the safety and fairness of the App</li>
+            </ol>
+
+            <h2>Who Do We Share Your Information With?</h2>
+            <p>We or our service providers may disclose your information without your permission:</p>
+            <ul>
+                <li>Pursuant to judicial or other government subpoenas, warrants, or orders or otherwise to comply with law</li>
+                <li>Where we believe an individual's rights, property, or safety or security is at risk</li>
+                <li>If we find that your actions violate our Terms of Use</li>
+                <li>Where otherwise required or permitted by applicable law</li>
+            </ul>
+
+            <h3>Third-Party Services</h3>
+            <p>The App may contain links to third-party services. We encourage you to read the privacy policy of every other website or application you visit:</p>
+
+            <table class="third-party-table">
+                <tr>
+                    <th>Service Provider</th>
+                    <th>Privacy Policy</th>
+                </tr>
+                <tr>
+                    <td>Appsflyer</td>
+                    <td><a href="https://www.appsflyer.com/legal/privacy-policy/" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>AppLovin Max</td>
+                    <td><a href="https://www.applovin.com/privacy/" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>Mintegral</td>
+                    <td><a href="https://www.mintegral.com/en/privacy" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>Google AdMob & Firebase</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>Pangle</td>
+                    <td><a href="https://www.pangleglobal.com/zh/privacy/partner-en" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>TopOn</td>
+                    <td><a href="https://www.toponad.com/en/privacy-policy" target="_blank">View Policy →</a></td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td><a href="https://www.facebook.com/privacy/policy/" target="_blank">View Policy →</a></td>
+                </tr>
+            </table>
+
+            <h2>How Do We Keep Your Information Secure?</h2>
+            <p>We will implement reasonable security measures in accordance with applicable privacy regulations to ensure the security of your information. However, please note that no security measures are perfect or unbreakable. There may be security risks during the transmission of any information, and we cannot guarantee "absolute security."</p>
+
+            <h2>How Long Do We Store Your Information?</h2>
+            <p>We will store your information for as long as necessary to fulfill the purposes for which we use it, unless we are obligated or entitled to store it for a longer period under applicable laws and regulations:</p>
+            <ul>
+                <li>We will retain your information for as long as we have an ongoing relationship with you and until you cancel your account</li>
+                <li>We will retain your information for as long as required by law</li>
+                <li>We will also retain your information as necessary to maintain or improve our legal position (for example, in connection with the statute of limitations, security, litigation, or regulatory investigations)</li>
+            </ul>
+
+            <h2>What Are Your Privacy Rights?</h2>
+            <div class="rights-list">
+                <ul>
+                    <li><strong>Right to Withdraw Consent</strong> If we process your information based on your consent, you have the right to withdraw your consent at any time by contacting us. Withdrawing consent will not affect the lawfulness of processing before you withdraw it.</li>
+
+                    <li><strong>Right to Rectification</strong> You have the right to request that any incomplete or inaccurate information we hold about you be corrected.</li>
+
+                    <li><strong>Right to Erasure</strong> You have the right to request the erasure of your information if: (i) the information is no longer necessary, (ii) you have withdrawn your consent, (iii) you have objected to the processing, (iv) the information is unlawfully processed, or (v) the information must be erased based on legal requirements.</li>
+
+                    <li><strong>Right to Object</strong> You have the right to object to our processing of your information where we are processing based on our legitimate interests.</li>
+
+                    <li><strong>Right to Restriction</strong> You have the right to request restriction of processing, meaning that we will continue to store your information but will not process it further.</li>
+                </ul>
+            </div>
+
+            <div class="children-box">
+                <h3>👶 Children's Privacy</h3>
+                <p>The App is <strong>not intended for use by children under the age of 13</strong>. No one under the age of 13 may provide any personal information to us or through the App. We do not knowingly collect personal information from children under the age of 13.</p>
+                <p style="margin-top: 15px;">If you are under the age of 13, please do not use the App without your parental permission. If we discover that we have collected personal information from a child under the age of 13, we will delete that information.</p>
+            </div>
+
+            <h2>Changes to the Privacy Policy</h2>
+            <p>Although significant changes are rare, this statement may be amended as new features, technology, or legal requirements arise, so please check back from time to time. We'll notify you if we make a significant change and, by continuing to use the App, after these changes are posted or notify to you, you agree to the revised Policy.</p>
         </div>
-        
-        <h2>8. Your Rights</h2>
-        <p>Under applicable privacy laws (such as GDPR, CCPA), you have the following rights[^1^]:</p>
-        <ul>
-            <li><strong>Right to Access:</strong> View the data we hold about you</li>
-            <li><strong>Right to Rectification:</strong> Update or correct inaccurate information</li>
-            <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
-            <li><strong>Right to Restrict Processing:</strong> Request restriction of data processing in certain circumstances</li>
-            <li><strong>Right to Data Portability:</strong> Obtain a copy of your data</li>
-        </ul>
-        
-        <h2>9. Policy Updates</h2>
-        <p>We may update this Privacy Policy from time to time. For material changes, we will notify you via in-app notices or by updating the date above. We encourage you to review this page periodically.</p>
-        
-        <h2>10. Contact Us</h2>
-        <div class="contact-info">
-            <p>If you have any questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
-            <p>📧 Email: [your-email@example.com]</p>
-            <p>📮 Address: [Your Physical Address]</p>
+
+        <!-- TERMS OF USE SECTION -->
+        <div id="terms" class="content-section">
+            <div class="intro-box">
+                <strong>Gold Bull Slots</strong> ("App" or "Service") is owned and operated by <strong>Allskills</strong> ("we", "us", or "our"). By using the App, you hereby consent to these Terms of Use.
+            </div>
+
+            <h2>Declaration</h2>
+            <div class="warning-box">
+                <h3>⚠️ Disclaimer of Warranties</h3>
+                <p style="margin-top: 10px;">THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS AND WE MAKE NO WARRANTY, REPRESENTATION OR CONDITION TO YOU WITH RESPECT TO THEM, WHETHER EXPRESSED OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED TERMS AS TO SATISFACTORY QUALITY, FITNESS FOR PURPOSE OR CONFORMANCE WITH DESCRIPTION.</p>
+            </div>
+
+            <p>In particular, we do not represent or warrant to you:</p>
+            <ol>
+                <li>That your use of the Services or any part thereof will be uninterrupted, timely, secure or free from error;</li>
+                <li>That any output or other information obtained by you as a result of your use of the Services will be accurate, up-to-date, reliable, non-infringing or secure;</li>
+                <li>That defects in the operation or functionality of the Services will be corrected; or</li>
+                <li>With respect to third party offerings.</li>
+            </ol>
+
+            <h3>Limitation of Liability</h3>
+            <p>Unless otherwise agreed, neither party shall bear incidental, consequential, punitive, special, or indirect losses or damages, including but not limited to the loss of profits or goodwill, regardless of how such losses or damages arise or the liability theory they are based on, and irrespective of any litigation brought under breach, tort, compensation, or any other legal grounds, even if informed of the possibility of such losses.</p>
+
+            <h2>Prohibited Conduct</h2>
+            <p>The following acts are prohibited in using the App:</p>
+            <ul>
+                <li><strong>Reverse Engineering:</strong> Disassembling, or decoding the source code by any other means for unjustifiable purposes or in a wrongful manner;</li>
+                <li><strong>Unauthorized Distribution:</strong> Selling, renting, or licensing the App without our prior consent expressed either in writing or by some other method specified by us;</li>
+                <li><strong>Abusive Use:</strong> Using or misusing the App in excess of a reasonably necessary amount, or using the App in a way that does not comply with the instructions set by us regarding App use;</li>
+                <li><strong>Improper Purpose:</strong> Using the App in a manner that is not within the purpose for which the App is provided, or using the App by a method or in a manner that we deem inappropriate.</li>
+            </ul>
+
+            <h2>Third Party's SDKs or Services</h2>
+            <p>The App may contain links to third-party SDKs or services. You acknowledge and agree that we are not responsible or liable for:</p>
+            <ul>
+                <li>The availability or accuracy of such SDKs or services;</li>
+                <li>The content, products, or services on or available from such SDKs or services.</li>
+            </ul>
+            <p>Links to such SDKs or services do not imply any endorsement by us of such SDKs or services or the content, products, or services available from such SDKs or services. You acknowledge sole responsibility for and assume all risk arising from your use of any such SDKs or services. We may remove any links at any time for any reason or for no reason.</p>
+
+            <h2>Advertisements</h2>
+            <p>We may work with third-party advertisers to serve ads to you. Your use of the App and our services constitutes your consent for us to push advertisements to you.</p>
+            <div class="warning-box">
+                <p><strong>Important Note:</strong> We are not responsible for advertisements provided by third-party advertisers.</p>
+            </div>
+
+            <h2>Children</h2>
+            <div class="children-box">
+                <h3>👶 Protection of Minors</h3>
+                <p>We respect the privacy of children. We are committed to complying with applicable laws and regulations regarding minors, including the Children's Online Privacy Protection Act of the United States.</p>
+                <p style="margin-top: 15px;"><strong>If you are a minor, please do not use this application.</strong> If we learn that any personal information of a minor has been inadvertently collected, we will delete that information as quickly as possible.</p>
+                <p style="margin-top: 15px;">If you believe that we may have collected information from a minor, please send us an email at <a href="mailto:zy504408187@gmail.com" class="email-link">zy504408187@gmail.com</a>.</p>
+            </div>
+
+            <h2>Contact Us</h2>
+            <div class="contact-highlight">
+                <p>If you have any questions or concerns about these terms, you can email us at:</p>
+                <p>📧 <a href="mailto:zy504408187@gmail.com" class="email-link">zy504408187@gmail.com</a></p>
+            </div>
         </div>
-        
+
         <footer>
-            <p>© 2026 [Your Developer Name]. All rights reserved.</p>
+            <p>© 2026 <span class="company-name">Allskills</span>. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 12px;">Gold Bull Slots - Legal Documents</p>
         </footer>
     </div>
+
+    <script>
+        function showSection(sectionName) {
+            // 隐藏所有内容区域
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // 移除所有按钮的激活状态
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // 显示选中的内容区域
+            document.getElementById(sectionName).classList.add('active');
+
+            // 激活对应的按钮
+            event.target.classList.add('active');
+
+            // 滚动到页面顶部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
